@@ -1,0 +1,126 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling for the main container */
+.container {
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #153677, #4e085f); /* Gradient background */
+    padding: 10px;
+}
+
+/* Styling for the To Do List application box */
+.todo-app {
+    width: 100%;
+    max-width: 540px; /* Maximum width for responsiveness */
+    background: #fff; /* White background */
+    margin: 100px auto 20px; /* Centering the box */
+    padding: 40px 30px 70px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for the heading */
+.todo-app h2 {
+    color: #002765; /* Dark blue color */
+    display: flex;
+    align-items: center; /* Align icon with text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styling for the icon next to the heading */
+.todo-app h2 img {
+    width: 30px; /* Icon size */
+    margin-left: 10px; /* Space between text and icon */
+}
+
+/* Styling for the input row */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between input and button */
+    background: #edeef0; /* Light gray background */
+    border-radius: 30px; /* Rounded corners */
+    padding-left: 20px; /* Padding inside the input row */
+    margin-bottom: 25px; /* Space below the input row */
+}
+
+/* Styling for the input box */
+input {
+    flex: 1; /* Take up remaining space */
+    border: none;
+    outline: none;
+    background: transparent; /* Transparent background */
+    padding: 10px;
+    font-weight: 14px;
+}
+
+/* Styling for the add button */
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px; /* Button padding */
+    background: #ff5945; /* Red background */
+    color: #fff; /* White text */
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 40px; /* Rounded corners */
+}
+
+/* Styling for the task list */
+ul li {
+    list-style: none; /* Remove bullet points */
+    font-size: 17px;
+    padding: 12px 8px 12px 50px; /* Padding for each task */
+    user-select: none; /* Prevent text selection */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative;
+}
+
+/* Styling for the custom checkbox (before pseudo-element) */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%; /* Circular checkbox */
+    background-image: url(images/unchecked2.png); /* Unchecked icon */
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+/* Styling for completed tasks */
+ul li.checked {
+    color: #555; /* Gray color for completed tasks */
+    text-decoration: line-through; /* Line through the text */
+}
+
+/* Styling for the checked checkbox */
+ul li.checked::before {
+    background-image: url(images/images.png); /* Checked icon */
+}
+
+/* Styling for the delete button (span) */
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%; /* Circular delete button */
+}
+
+/* Hover effect for the delete button */
+ul li span:hover {
+    background: #edeef0; /* Light gray background on hover */
+}

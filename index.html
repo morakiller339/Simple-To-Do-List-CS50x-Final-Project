@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta tag for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title of the page -->
+        <title>To Do List</title>
+        <!-- Link to the external CSS file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Main container for the To Do List application -->
+        <div class="container">
+            <!-- To Do List application section -->
+            <div class="todo-app">
+                <!-- Heading with an icon -->
+                <h2>To Do List<img src="icon.png"></h2>
+                <!-- Input row for adding tasks -->
+                <div class="row">
+                    <!-- Input box for typing tasks -->
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <!-- Button to add tasks -->
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <!-- Unordered list to display tasks -->
+                <ul id="list-container">
+                    <!-- Example tasks (commented out) -->
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+            </div>
+        </div>
+        <!-- Link to the external JavaScript file -->
+        <script src="script.js"></script>
+    </body>
+</html>
