@@ -51,6 +51,7 @@ Final Project Submission
 
 ---
 
-## Youtube: [https://youtu.be/7KlJuyqueVg](https://youtu.be/u_EuypfhzVI)
+## Youtube: https://youtu.be/u_EuypfhzVI
 ## Github: https://github.com/morakiller339/Simple-To-Do-List-CS50x-Final-Project
+
 
